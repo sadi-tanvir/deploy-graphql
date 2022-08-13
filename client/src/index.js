@@ -8,7 +8,7 @@ import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client
 
 
 const client = new ApolloClient({
-  uri: '/graphql',
+  uri: 'https://gql-quote.herokuapp.com/graphql',
   cache: new InMemoryCache(),
   headers:{
     authorization: localStorage.getItem('accessToken')
